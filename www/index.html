@@ -5,7 +5,7 @@
 </head>
 <body bgcolor=" LIGHTBLUE">
 
-    <center><h1><font style="font-size: 150px;">Add Contacts</h1></font></center>
+    <center><h1><font style="font-size: 100px;">Add Contacts</h1></font></center>
 
 <script >
 function Save(){
@@ -32,7 +32,7 @@ function Save(){
         alert('Type your email here')
     }
     else{
-        window.localStorage.setItem('save3',document.getElementById('email').value);
+        window.localStorage.setItem('email',document.getElementById('email').value);
         document.getElementById('email').value=null
 
     }
@@ -60,25 +60,25 @@ function bura(){
 
 <CENTER><TABLE>
 <TR>
-    <TD bgcolor=pink style=" width: 300px; height: 50px; text-align: center; font-family: 'Calibri';color: white; font-size: 40px">Name</TD>
+    <TD bgcolor=pink style=" width: 200px; height: 40px; text-align: center; font-family: 'Calibri';color: white; font-size: 30px">Name</TD>
 </TR>
 </TABLE>
-<input type="text" id="name" placeholder="insert your name" style="text-align: center; width: 400px; height: 50px; font-size: 40px"><br><br><br>
+<input type="text" id="name" placeholder="insert your name" style="text-align: center; width: 300px; height: 40px; font-size: 30px"><br><br><br>
 
 <TABLE>
 <TR>
-    <TD  bgcolor=pink style="width: 300px; height: 50px; text-align: center; font-family: 'Calibri'; color: white; font-size: 40px">Number</TD>
+    <TD  bgcolor=pink style="width: 200px; height: 40px; text-align: center; font-family: 'Calibri'; color: white; font-size: 30px">Number</TD>
 </TR>
 </TABLE>
-<input type="text" id="number" placeholder="insert your number" style="text-align: center; width: 400px; height: 50px; font-size: 40px"><br><br><br>
+<input type="text" id="number" placeholder="insert your number" style="text-align: center; width: 300px; height: 40px; font-size: 30px"><br><br><br>
 
 
 <TABLE>
 <TR>
-    <TD bgcolor=pink style="width: 300px; height: 50px; text-align: center; font-family: 'Calibri';color: white; font-size: 40px">Email</TD>
+    <TD bgcolor=pink style="width: 200px; height: 40px; text-align: center; font-family: 'Calibri';color: white; font-size: 30px">Email</TD>
 </TR>
 </TABLE>
-<input type="text" id="email" placeholder="insert your email" style="text-align: center; width: 400px; height: 50px; font-size: 40px"></center><br><br><br>
+<input type="text" id="email" placeholder="insert your email" style="text-align: center; width: 300px; height: 40px; font-size: 30px"></center><br><br><br>
 
 <center><button onclick="Save()" style="font-weight:bold; font-size:30px;margin-left: 4%; height:50px;width:150px; background-color:lightblue; font-family: 'Calibri'" >Save</button>
 
