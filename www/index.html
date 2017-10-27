@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html>
+<head>
+    
+</head>
+<body bgcolor=" LIGHTBLUE">
+
+    <center><h1><font style="font-size: 150px;">Add Contacts</h1></font></center>
+
+<script >
+function Save(){
+    var name = document.getElementById('name').value;
+    if (name=="") {
+        alert('Type your name here')
+    }
+    else{
+        window.localStorage.setItem('name',document.getElementById('name').value);
+        document.getElementById('name').value=null
+
+    }
+        var number = document.getElementById('number').value;
+    if (number =="") {
+        alert('Type your number here')
+    }
+    else{
+        window.localStorage.setItem('number',document.getElementById('number').value);
+        document.getElementById('number').value=null
+
+    }
+    var email = document.getElementById('email').value;
+    if (email =="") {
+        alert('Type your email here')
+    }
+    else{
+        window.localStorage.setItem('save3',document.getElementById('email').value);
+        document.getElementById('email').value=null
+
+    }
+    
+}
+
+function back(){
+document.getElementById('name').value = window.localStorage.getItem('name');
+document.getElementById('number').value = window.localStorage.getItem('number');
+document.getElementById('email').value = window.localStorage.getItem('email');
+}
+function bura(){
+    document.getElementById('name').value=null
+    document.getElementById('number').value=null
+    document.getElementById('email').value=null
+}
+
+
+
+
+</script>
+
+
+
+
+<CENTER><TABLE>
+<TR>
+    <TD bgcolor=pink style=" width: 300px; height: 50px; text-align: center; font-family: 'Calibri';color: white; font-size: 40px">Name</TD>
+</TR>
+</TABLE>
+<input type="text" id="name" placeholder="insert your name" style="text-align: center; width: 400px; height: 50px; font-size: 40px"><br><br><br>
+
+<TABLE>
+<TR>
+    <TD  bgcolor=pink style="width: 300px; height: 50px; text-align: center; font-family: 'Calibri'; color: white; font-size: 40px">Number</TD>
+</TR>
+</TABLE>
+<input type="text" id="number" placeholder="insert your number" style="text-align: center; width: 400px; height: 50px; font-size: 40px"><br><br><br>
+
+
+<TABLE>
+<TR>
+    <TD bgcolor=pink style="width: 300px; height: 50px; text-align: center; font-family: 'Calibri';color: white; font-size: 40px">Email</TD>
+</TR>
+</TABLE>
+<input type="text" id="email" placeholder="insert your email" style="text-align: center; width: 400px; height: 50px; font-size: 40px"></center><br><br><br>
+
+<center><button onclick="Save()" style="font-weight:bold; font-size:30px;margin-left: 4%; height:50px;width:150px; background-color:lightblue; font-family: 'Calibri'" >Save</button>
+
+
+<button type="button" onclick="bura()" id="clearAll" style="margin-left: 4%; background-color: lightblue; height: 50px; width: 150px; font-family: 'Calibri'; font-weight: bold; font-size: 30px">Cancel</button>
+
+<button  onclick="back()" type="button" style="margin-left: 4%; background-color: lightblue; height: 50px; width: 150px; font-family: 'Calibri'; font-weight: bold; font-size: 30px">Restore</button>
+
+<a href="LIST.HTML"><button style="margin-left: 4%; background-color: lightblue; height: 50px; width: 150px; font-family: 'Calibri'; font-weight: bold; font-size: 30px">List</button></a>
+
+</center>
+
+
+
+
+
+</body>
+</html> 

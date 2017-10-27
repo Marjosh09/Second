@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightblue">
+		<center><h1><font style="font-size: 150px;">Contacts List</h1></font></center>
+	<hr style="background-color: black">	
+<input readonly="true" id="name" style="background-color: transparent; border-color: transparent; font-size: 80px;padding-left: 15px;padding-top:50px;font-family: 'Times New Roman'" ><br>
+<input readonly="true" id="number" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+<input readonly="true" id="email" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'">
+</body>
+<script>
+	document.getElementById('name').value = window.localStorage.getItem('name');
+document.getElementById('number').value = window.localStorage.getItem('number');
+document.getElementById('email').value = window.localStorage.getItem('email');
+</script>
+</html>
